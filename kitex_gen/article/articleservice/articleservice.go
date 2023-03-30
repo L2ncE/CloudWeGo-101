@@ -63,7 +63,7 @@ func newServiceClient(c client.Client) *kClient {
 	}
 }
 
-func (p *kClient) PostArticle(ctx context.Context, req *article.PostArticleResponse) (r *article.PostArticleResponse, err error) {
+func (p *kClient) PostArticle(ctx context.Context, req *article.PostArticleRequest) (r *article.PostArticleResponse, err error) {
 	var _args article.ArticleServicePostArticleArgs
 	_args.Req = req
 	var _result article.ArticleServicePostArticleResult

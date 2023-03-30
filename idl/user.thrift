@@ -1,19 +1,11 @@
 namespace go user
 
-struct BaseResponse {
-    1: i64 status_code,
-    2: string status_msg,
-}
-
 struct RegisterRequest {
     1: string username
     2: string password
 }
 
-struct ResgisterResponse {
-    1: string token
-    2: BaseResponse base
-}
+struct ResgisterResponse {}
 
 struct LoginRequest {
     1: string username
@@ -21,8 +13,7 @@ struct LoginRequest {
 }
 
 struct LoginResponse {
-    1: string token
-    2: BaseResponse base
+    1: i64 uid
 }
 
 struct GetArticleNumRequest {
@@ -31,16 +22,13 @@ struct GetArticleNumRequest {
 
 struct GetArticleNumResponse {
     1: i64 num
-    2: BaseResponse base
 }
 
 struct AddArticleNumRequest {
     1: i64 user_id
 }
 
-struct AddArticleNumResponse {
-    1: BaseResponse base
-}
+struct AddArticleNumResponse {}
 
 service UserService {
     LoginResponse Login(1: LoginRequest req)
