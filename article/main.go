@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/L2ncE/CloudWeGo-101/article/init"
+	"github.com/L2ncE/CloudWeGo-101/article/initialize"
 	"github.com/L2ncE/CloudWeGo-101/article/pkg"
 	article "github.com/L2ncE/CloudWeGo-101/kitex_gen/article/articleservice"
 	"github.com/cloudwego/kitex/pkg/klog"
@@ -11,8 +11,8 @@ import (
 )
 
 func main() {
-	r, info := init.InitRegistry()
-	db := init.InitDB()
+	r, info := initialize.InitRegistry()
+	db := initialize.InitDB()
 
 	// Create new server.
 	srv := article.NewServer(&ArticleServiceImpl{

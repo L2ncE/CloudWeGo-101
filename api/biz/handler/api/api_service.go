@@ -49,6 +49,11 @@ func Login(ctx context.Context, c *app.RequestContext) {
 		Password: req.Password,
 	})
 
+	if err != nil {
+		c.String(consts.StatusBadRequest, err.Error())
+		return
+	}
+
 	j := middleware.NewJWT()
 	claims := middleware.CustomClaims{
 		ID: resp.Uid,

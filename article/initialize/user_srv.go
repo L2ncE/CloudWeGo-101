@@ -1,4 +1,4 @@
-package init
+package initialize
 
 import (
 	user "github.com/L2ncE/CloudWeGo-101/kitex_gen/user/userservice"

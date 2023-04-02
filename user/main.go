@@ -2,7 +2,7 @@ package main
 
 import (
 	user "github.com/L2ncE/CloudWeGo-101/kitex_gen/user/userservice"
-	"github.com/L2ncE/CloudWeGo-101/user/init"
+	"github.com/L2ncE/CloudWeGo-101/user/initialize"
 	mysql "github.com/L2ncE/CloudWeGo-101/user/pkg"
 	"github.com/cloudwego/kitex/pkg/klog"
 	"github.com/cloudwego/kitex/pkg/rpcinfo"
@@ -11,8 +11,8 @@ import (
 )
 
 func main() {
-	r, info := init.InitRegistry()
-	db := init.InitDB()
+	r, info := initialize.InitRegistry()
+	db := initialize.InitDB()
 
 	// Create new server.
 	srv := user.NewServer(&UserServiceImpl{

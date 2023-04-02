@@ -4,13 +4,13 @@ package main
 
 import (
 	"fmt"
-	"github.com/L2ncE/CloudWeGo-101/api/init"
-	"github.com/L2ncE/CloudWeGo-101/api/init/rpc"
+	"github.com/L2ncE/CloudWeGo-101/api/initialize"
+	"github.com/L2ncE/CloudWeGo-101/api/initialize/rpc"
 	"github.com/cloudwego/hertz/pkg/app/server"
 )
 
 func main() {
-	r, info := init.InitRegistry()
+	r, info := initialize.InitRegistry()
 	rpc.Init()
 
 	h := server.New(

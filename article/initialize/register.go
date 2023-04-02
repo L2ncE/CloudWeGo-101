@@ -1,4 +1,4 @@
-package init
+package initialize
 
 import (
 	"github.com/bwmarrin/snowflake"
@@ -22,13 +22,13 @@ func InitRegistry() (registry.Registry, *registry.Info) {
 	}
 
 	// Using snowflake to generate service name.
-	sf, err := snowflake.NewNode(4)
+	sf, err := snowflake.NewNode(3)
 	if err != nil {
 		klog.Fatalf("generate service name failed: %s", err.Error())
 	}
 	info := &registry.Info{
-		ServiceName: "user_srv",
-		Addr:        utils.NewNetAddr("tcp", "127.0.0.1:8881"),
+		ServiceName: "article_srv",
+		Addr:        utils.NewNetAddr("tcp", "127.0.0.1:8882"),
 		Tags: map[string]string{
 			"ID": sf.Generate().Base36(),
 		},
