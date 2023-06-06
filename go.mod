@@ -6,7 +6,7 @@ require (
 	github.com/apache/thrift v0.13.0
 	github.com/bwmarrin/snowflake v0.3.0
 	github.com/cloudwego/hertz v0.6.1
-	github.com/cloudwego/kitex v0.5.1
+	github.com/cloudwego/kitex v0.5.2
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/hashicorp/consul/api v1.20.0
 	github.com/hertz-contrib/registry/consul v0.0.0-20230310022437-e0024eacdbb7
@@ -26,7 +26,7 @@ require (
 	github.com/cloudwego/fastpb v0.0.4 // indirect
 	github.com/cloudwego/frugal v0.1.6 // indirect
 	github.com/cloudwego/netpoll v0.3.2 // indirect
-	github.com/cloudwego/thriftgo v0.2.8 // indirect
+	github.com/cloudwego/thriftgo v0.2.9 // indirect
 	github.com/fatih/color v1.13.0 // indirect
 	github.com/fsnotify/fsnotify v1.5.4 // indirect
 	github.com/go-sql-driver/mysql v1.7.0 // indirect
