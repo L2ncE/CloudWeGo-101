@@ -8,7 +8,7 @@ require (
 	github.com/cloudwego/hertz v0.6.1
 	github.com/cloudwego/kitex v0.5.1
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
-	github.com/hashicorp/consul/api v1.20.0
+	github.com/hashicorp/consul/api v1.21.0
 	github.com/hertz-contrib/registry/consul v0.0.0-20230310022437-e0024eacdbb7
 	github.com/kitex-contrib/registry-consul v0.0.0-20221024133802-971ac457240a
 	gorm.io/driver/mysql v1.4.7
