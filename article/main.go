@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/L2ncE/CloudWeGo-101/article/config"
 	"github.com/L2ncE/CloudWeGo-101/article/initialize"
 	"github.com/L2ncE/CloudWeGo-101/article/pkg"
 	article "github.com/L2ncE/CloudWeGo-101/kitex_gen/article/articleservice"
@@ -13,10 +14,12 @@ import (
 func main() {
 	r, info := initialize.InitRegistry()
 	db := initialize.InitDB()
+	initialize.InitUser()
 
 	// Create new server.
 	srv := article.NewServer(&ArticleServiceImpl{
 		MySqlManager: pkg.NewArticleManager(db),
+		UserManager:  &pkg.UserManager{UserClient: config.UserClient},
 	},
 		server.WithServiceAddr(utils.NewNetAddr("tcp", "127.0.0.1:8882")),
 		server.WithRegistry(r),

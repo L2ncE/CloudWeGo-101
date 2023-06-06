@@ -18,7 +18,7 @@ func main() {
 	srv := user.NewServer(&UserServiceImpl{
 		MySqlManager: mysql.NewUserManager(db),
 	},
-		server.WithServiceAddr(utils.NewNetAddr("tcp", "127.0.0.1:8881")),
+		server.WithServiceAddr(utils.NewNetAddr("tcp", "10.20.72.188:8881")),
 		server.WithRegistry(r),
 		server.WithRegistryInfo(info),
 		server.WithServerBasicInfo(&rpcinfo.EndpointBasicInfo{ServiceName: "user_srv"}),
