@@ -95,7 +95,7 @@ def main():
                 continue
             must(
                 status == "neutral",
-                f"PR #{n} check-run `{name}`'s status `{status}` is not failure!",
+                f"PR #{n} check-run `{name}`'s status `{status}` is not neutral!",
             )
         print("SUCCESS!")
 
