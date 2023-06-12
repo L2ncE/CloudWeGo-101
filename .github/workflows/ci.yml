@@ -15,7 +15,7 @@ jobs:
         with:
           go-version: 1.18
 
-  Lint2:
+  copilot_for_prs:
     name: Copilot for PRs
     runs-on: [ ubuntu-latest ]
     steps:
