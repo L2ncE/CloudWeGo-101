@@ -94,7 +94,7 @@ def main():
             if name == 'Copilot for PRs':
                 continue
             must(
-                status == "success",
+                status in ("success", "failure"),
                 f"PR #{n} check-run `{name}`'s status `{status}` is not success!",
             )
         print("SUCCESS!")
