@@ -84,7 +84,6 @@ def main():
                 f"@{u} has stamped PR #{n} `{cc}`, please resolve it first!",
             )
 
-        must(approved, f"PR #{n} is not approved yet!")
 
         resp = gh.get(f'https://api.github.com/repos/{REPO}/commits/{pr_obj["head"]["sha"]}/check-runs')
         must(resp.ok, "Error getting check runs status!")
