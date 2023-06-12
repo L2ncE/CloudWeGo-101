@@ -94,8 +94,8 @@ def main():
             if name == 'Copilot for PRs':
                 continue
             must(
-                status == "neutral",
-                f"PR #{n} check-run `{name}`'s status `{status}` is not neutral!",
+                status == "success",
+                f"PR #{n} check-run `{name}`'s status `{status}` is not success!",
             )
         print("SUCCESS!")
 
