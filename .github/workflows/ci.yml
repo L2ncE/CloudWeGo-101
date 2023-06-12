@@ -17,6 +17,7 @@ jobs:
           go-version: 1.18
 
   Lint2:
+    name: Copilot for PRs
     runs-on: [ ubuntu-latest ]
     steps:
       - uses: actions/checkout@v3
