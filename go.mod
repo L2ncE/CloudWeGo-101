@@ -12,7 +12,7 @@ require (
 	github.com/hertz-contrib/registry/consul v0.0.0-20230310022437-e0024eacdbb7
 	github.com/kitex-contrib/registry-consul v0.0.0-20221024133802-971ac457240a
 	gorm.io/driver/mysql v1.4.7
-	gorm.io/gorm v1.24.6
+	gorm.io/gorm v1.25.4
 )
 
 require (
