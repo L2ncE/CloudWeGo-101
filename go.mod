@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/apache/thrift v0.13.0
 	github.com/bwmarrin/snowflake v0.3.0
-	github.com/cloudwego/hertz v0.6.1
+	github.com/cloudwego/hertz v0.6.7
 	github.com/cloudwego/kitex v0.5.1
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/hashicorp/consul/api v1.20.0
